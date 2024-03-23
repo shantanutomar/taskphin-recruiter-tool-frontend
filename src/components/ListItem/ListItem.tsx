@@ -35,7 +35,7 @@ const ListItem: FC<TListItemProps> = ({
             <td className="text-blue-600 px-2 py-2 text-center whitespace-nowrap text-sm font-medium">
                 <button
                     className="bg-transparent underline text-blue-600 hover:bg-transparent"
-                    onClick={onItemDetails}
+                    onClick={(event) => onItemDetails(event)}
                 >{`${candidate.firstName} ${candidate.lastName}`}</button>
             </td>
             <td className="px-2 py-2 text-center whitespace-nowrap text-sm font-medium text-gray-900">

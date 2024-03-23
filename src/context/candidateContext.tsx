@@ -46,7 +46,6 @@ const reducer = (state: TState, action: any) => {
                 isLoading: false,
             };
         case CANDIDATE_CREATE:
-            console.log('action.candidates', action.candidate);
             return {
                 ...state,
                 candidates: [...state.candidates, action.candidate],

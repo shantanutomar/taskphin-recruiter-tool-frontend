@@ -1,4 +1,5 @@
 import React, { FC, useCallback, useMemo, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { addFieldsConfig, allowedSkillsMap } from '../../constants';
 import { CandidatesDispatchContext } from '../../context/candidateContext';
 import { addCandidateAPI } from '../../api/candidatesApi';
@@ -184,7 +185,7 @@ const AddCandidateDialog: FC<TAddCandidateDialogProps> = ({ onClose }) => {
                 {formData.skills &&
                     formData.skills.map((skill: TSkill, index: number) => (
                         <div
-                            key={index}
+                            key={uuidv4()}
                             className="flex justify-center items-center space-x-2 mb-2"
                         >
                             <select

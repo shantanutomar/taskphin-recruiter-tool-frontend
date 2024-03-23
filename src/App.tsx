@@ -12,7 +12,7 @@ function App() {
     const dispatch = React.useContext(CandidatesDispatchContext);
     const [showAddDialog, setShowAddDialog] = useState<boolean>(false);
     const [showUpdateDialog, setShowUpdateDialog] = useState<boolean>(false);
-    const [showDetailsDialog, setShowDetailsDialog] = useState<boolean>(true);
+    const [showDetailsDialog, setShowDetailsDialog] = useState<boolean>(false);
     const [selectedCandidate, setSelectedCandidate] =
         useState<TCandidate | null>(null);
     const [showDeleteConfirmationDialog, setShowDeleteConfirmationDialog] =

@@ -60,7 +60,7 @@ const CandidateDetailsDialog: FC<TCandidateDetailsDialogProps> = ({
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                     {candidateDetails.skills.map((skill: TSkill) => (
-                        <tr className="hover:bg-gray-100">
+                        <tr key={skill.id} className="hover:bg-gray-100">
                             <td className="px-2 py-1 whitespace-nowrap text-sm font-medium text-gray-900">
                                 <h1>{allowedSkillsMap[skill.name]}</h1>
                             </td>
